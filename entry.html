@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% block body %}
+    <h2>{{ the_title }}</h2>
+    <form method="post" action="/exec_equation">
+        <table>
+
+            <tr>
+                <td>ab:</td>
+                <td><input type="text" name="ab"
+                 width="60" /></td>
+            </tr>
+            <tr>
+                <td>al:</td>
+                <td><input type="text" name="al"/></td>
+            </tr>
+          </table>
+
+              <p><input type="submit" value="Do it!" /></p>
+    </form>
+{% endblock%}
